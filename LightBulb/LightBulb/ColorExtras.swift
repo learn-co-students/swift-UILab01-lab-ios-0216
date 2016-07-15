@@ -10,11 +10,11 @@ import UIKit
 
 extension String {
     var color: UIColor {
-        switch lowercaseString {
-        case "red": return UIColor.redColor()
-        case "yellow": return UIColor.yellowColor()
-        case "blue": return UIColor.blueColor()
-        case "green": return UIColor.greenColor()
+        switch lowercased() {
+        case "red": return UIColor.red()
+        case "yellow": return UIColor.yellow()
+        case "blue": return UIColor.blue()
+        case "green": return UIColor.green()
         default: assert(false, "Invalid color name: \(self)")
         }
     }
@@ -23,10 +23,10 @@ extension String {
 extension UISegmentedControl {
     var color: UIColor {
         switch selectedSegmentIndex {
-        case 0: return UIColor.redColor()
-        case 1: return UIColor.yellowColor()
-        case 2: return UIColor.blueColor()
-        case 3: return UIColor.greenColor()
+        case 0: return UIColor.red()
+        case 1: return UIColor.yellow()
+        case 2: return UIColor.blue()
+        case 3: return UIColor.green()
         default: assert(false, "Invalid color index: \(selectedSegmentIndex)")
         }
     }
