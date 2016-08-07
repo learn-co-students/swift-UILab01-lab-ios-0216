@@ -21,8 +21,11 @@ extension String {
 }
 
 extension UISegmentedControl {
+    
     var color: UIColor {
+        
         switch selectedSegmentIndex {
+            
         case 0: return UIColor.redColor()
         case 1: return UIColor.yellowColor()
         case 2: return UIColor.blueColor()
